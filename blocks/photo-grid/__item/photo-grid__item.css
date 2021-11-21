@@ -1,5 +1,13 @@
 .photo-grid__item {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: top;
+    background-color: #000;
+    opacity: .7;
+    z-index: 1;
+}
+
+.photo-grid__item:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
