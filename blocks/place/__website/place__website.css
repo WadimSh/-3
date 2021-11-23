@@ -1,15 +1,27 @@
 .place__website {
-    align-self: end;
+    margin-top: 25px;
+    align-self: start;
     justify-self: start;
     grid-column: 2;
     grid-row: 1;
 }
+
+@media screen and (max-width: 1023px) {
+    .place__website {
+        margin-top: 10px;
+   }
+}
   
 @media screen and (max-width: 767px) {
     .place__website {
-        align-self: start;
+        margin: 0;
+        align-self: end;
+        justify-self: end;
         grid-column: 1;
         grid-row: 2;
         padding-left: 16px;
+        position: absolute;
+        top: -30px;
+        right: -10px;
     }
 }

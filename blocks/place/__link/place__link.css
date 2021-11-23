@@ -1,11 +1,42 @@
 .place__link {
     color: #fff;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 100%;
+    padding-left: 18px;
+    padding-right: 16px;
+    padding-bottom: 11px;
+    padding-top: 6px;
 }
   
 .place__link:hover {
+    padding-left: 20px;
+    padding-right: 18px;
+    padding-bottom: 13px;
+    padding-top: 8px;
+}
+
+.place__link:active {
     opacity: .5;
     transition: .2s;
+}
+
+@media screen and (max-width: 767px) {
+    .place__link {
+        font-size: 18px;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        padding-top: 4px;
+    }
+
+    .place__link:hover {
+        padding-left: 14px;
+        padding-right: 12px;
+        padding-bottom: 9px;
+        padding-top: 6px;
+    }
 }

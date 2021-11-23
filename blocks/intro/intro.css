@@ -16,7 +16,7 @@
     right: -150px;
     background-size: contain;
     background-image: url(../../images/kaufman-triangle.svg);
-    opacity: .5;   
+    opacity: .3;   
 }
   
 @media screen and (max-width: 1279px) {
@@ -44,6 +44,5 @@
         content: '';
         height: 300px;
         width: 300px;
-        
         right: -50px;
 }

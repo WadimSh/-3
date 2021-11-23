@@ -6,3 +6,35 @@
   .rotation::before {
     animation: rotation linear 20s infinite;
   }
+
+@media screen and (max-width: 767px) {
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+      top: 0;
+      right: -300px;
+  }
+  25% {
+      top: 120px;
+      right: -150px;
+  }
+  
+  50% {
+      transform: rotate(180deg);
+      top: 240px;
+      right: -50px;
+  }
+  75% {
+      top: 360px;
+      right: -150px;
+  }
+  100% {
+      transform: rotate(360deg);
+      top: 480px;
+      right: -300px;
+  }
+      
+  .rotation::before {
+    animation: rotation linear 20s infinite;
+  }
+}
